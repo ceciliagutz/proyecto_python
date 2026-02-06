@@ -1,0 +1,28 @@
+[
+   
+    {
+        "name": "Cecilia",
+        "age" : 24,
+        "position" : "Desarrollador Jr",
+        "salary":12000
+    },
+     {
+        "name": "Leticia",
+        "age" : 47,
+        "position" : "Marketing",
+        "salary":30000
+    },
+     {
+        "name": "Paula",
+        "age" : 26,
+        "position" : "System Operator",
+        "salary":15000
+    },
+     {
+        "name": "Victor",
+        "age" : 30,
+        "position" : "Fronted",
+        "salary":18000
+    }
+
+]
