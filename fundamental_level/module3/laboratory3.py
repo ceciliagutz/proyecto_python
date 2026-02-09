@@ -54,14 +54,13 @@ def convert_to_order(order_in: OrderIn) -> Order:
 
 
 if __name__ == "__main__":
-    data = {
-        "items": [
-            {"name": "Laptop", "price": 12000, "quantity": 1},
-            {"name": "Keyboard", "price": 600, "quantity": 2},
+    order_in = OrderIn(
+        items=[
+            OrderItemIn(name="Laptop", price=12000, quantity=1),
+            OrderItemIn(name="Keyboard", price=600, quantity=2),
         ]
-    }
+    )
 
-    order_in = OrderIn(**data)
     order = convert_to_order(order_in)
     total = order.total_price()
     order_out = OrderOut(total=total)

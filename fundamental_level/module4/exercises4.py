@@ -55,7 +55,7 @@ if __name__ == "__main__":
     print(to_string(11.11))
     print(get_status_message("success"))
 
-    user = {"name": "Cecilia", "age": 22}
+    user: User = {"name": "Cecilia", "age": 24}
     print(describe_user(user))
 
     report = Report()

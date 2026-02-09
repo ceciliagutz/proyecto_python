@@ -31,7 +31,7 @@ class Order:
         self.products = products
 
     def total_price(self) -> float:
-        total = 0
+        total: float = 0.0
         for product in self.products:
             total += product.price
         return total
@@ -60,11 +60,11 @@ if __name__ == "__main__":
     print(p1)
     print(p2)
 
-dp = DigitalProduct("Ebook", 150, 7)
-print(dp)
+    dp = DigitalProduct("Ebook", 150, 7)
+    print(dp)
 
-order = Order([p1, p2])
-print("Total order price:", order.total_price())
+    order = Order([p1, p2])
+    print("Total order price:", order.total_price())
 
-item = OrderItem("headphones", 500, 2)
-print("Item total:", item.total())
+    item = OrderItem("headphones", 500, 2)
+    print("Item total:", item.total())
