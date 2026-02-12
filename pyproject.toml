@@ -41,3 +41,5 @@ dev = [
     "mypy (>=1.19.1,<2.0.0)",
     "pytest (>=9.0.2,<10.0.0)"
 ]
+[tool.poetry.scripts]
+lab17 = "advance_level.laboratory17.app.orders_cli:app"
